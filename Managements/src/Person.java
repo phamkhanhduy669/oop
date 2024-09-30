@@ -1,6 +1,6 @@
 public class Person {
-    private String name;
-    private int birthYear;
+    String name;
+    int birthYear;
 
     public Person(String name, int birthYear) {
         this.name = name;
@@ -21,5 +21,10 @@ public class Person {
 
     public void setBirthYear(int birthYear) {
         this.birthYear = birthYear;
+    }
+
+    @Override
+    public String toString() {
+        return name + " - " + birthYear;
     }
 }
